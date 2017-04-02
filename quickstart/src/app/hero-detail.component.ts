@@ -1,6 +1,10 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, OnInit  } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common'
+import 'rxjs/add/operator/switchmap';
 import { Hero } from './hero';
+
+
 @Component({
     selector: 'hero-detail',
     template: `
@@ -17,4 +21,10 @@ import { Hero } from './hero';
 
 export class HeroDetailComponent {
     @Input() hero: Hero;
+
+    constructor(
+        private heroService: HeroService,
+        private route: ActivatedRoute,
+        private location: Location
+    ){}
 }
