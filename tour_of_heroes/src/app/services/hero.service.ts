@@ -1,4 +1,4 @@
-import { Hero } from './hero';
+import { Hero } from '../shared/hero';
 import { HEROES } from './mock-heroes';
 import { Injectable } from '@angular/core';
 
