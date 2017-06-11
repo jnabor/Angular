@@ -37,21 +37,20 @@
   <app-success-alert></app-success-alert>
 </div>
 
-<div class="row">
-<md-card *ngFor="let data of (myData ? myData.slice(0,5): []); let i=index">
+<div class="row" *ngFor="let data of (myData ? myData.slice(0,5): []); let i=index">
+  <div class="example-container">
+<md-card class="example-card" >
   <md-card-header>
     <md-card-title>{{ data.title }}</md-card-title>
   </md-card-header>
-  <img md-card-img src="{{ data.url }}">
+  <img md-card-image src="{{ data.url }}">
   <md-card-actions>
-    <button md-button>Like</button>
-    <button md-button>Share</button>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
   </md-card-actions>
 </md-card>
 </div>
-
-
-
+</div>
 
 
 

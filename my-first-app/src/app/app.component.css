@@ -2,3 +2,11 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.example-card {
+  width: 400px;
+}
+
+.success {
+  width: 400px;
+}
