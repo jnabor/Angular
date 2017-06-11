@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 body {
-  padding: 2em, 23em;
   font-family: roboto;
 }
 
@@ -12,6 +11,7 @@ body {
 
 .example-container {
   width: 500px;
+  margin: 10px;
 }
 
 .example-button-row {

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Http } from '@angular/Http';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
@@ -22,6 +22,7 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     BrowserAnimationsModule,
     MdButtonModule,
     MdCardModule,
@@ -29,7 +30,7 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MdToolbarModule,
     MdIconModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
