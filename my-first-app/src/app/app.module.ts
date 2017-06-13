@@ -10,6 +10,8 @@ import { ServersComponent } from './servers/servers.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule, MdGridListModule } from '@angular/material';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     WarningAlertComponent,
     SuccessAlertComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    ToolbarComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
