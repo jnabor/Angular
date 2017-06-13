@@ -1,9 +1,16 @@
 
+
+<div class="example-container">
+<md-input-container class="example-full-width">
+  <input mdInput placeholder="Server Name" (input)="onUpdateServerName($event)">  
+</md-input-container>
+</div>
+
 <div class="example-container">
   <div class="button-row">
-    <button md-raised-button 
+    <button md-raised-button
       [disabled]="!allowNewServer"
-      (click)="onCreateServer()">Add Server</button>
+      (click)="onCreateServer()">Add Server</button><p>{{ serverName }}</p>
     <!-- <p [innerText]="allowNewServer"><p> -->
     <p>{{ serverCreationStatus }}</p>
   </div>
