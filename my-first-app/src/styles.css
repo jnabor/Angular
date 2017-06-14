@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+/* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
+
+body {
+  font-family: roboto;
+  padding: 0;
+  margin: 0;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.example-container {
+  width: 500px;
+  margin: 10px;
+}
+
+.example-container-img {
+  width: 650px;
+  margin: 10px;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
