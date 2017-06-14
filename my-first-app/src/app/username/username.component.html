@@ -3,13 +3,12 @@
 <md-card>
 <md-input-container class="example-full-width">
   <input mdInput placeholder="User Name" 
-        [(ngModel)]="userName"
-        (input)='onUpdateUserName()' >  
+        [(ngModel)]="userName" >  
 </md-input-container>
 <p>{{ userName }}</p>  
 <button md-raised-button
-      [disabled]="!allowReset"
-      (click)="onReset()">Reset</button>
+      [disabled]="userName === ''"
+      (click)="userName = ''">Reset</button>
 </md-card>
 
 </div>

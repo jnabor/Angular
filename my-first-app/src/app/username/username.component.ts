@@ -7,22 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsernameComponent implements OnInit {
 
-  allowReset = false;
   userName = '';
-
-  onReset(){
-    this.userName = '';
-    this.allowReset = false;
-  }
-
-  onUpdateUserName(){
-    if(this.userName != ''){
-      this.allowReset = true;
-    } 
-    else{
-      this.allowReset = false;
-    }
-  }
 
   constructor() { }
 
