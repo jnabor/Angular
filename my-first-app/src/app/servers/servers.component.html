@@ -7,6 +7,12 @@
 </div>
 
 <div class="example-container">
+<md-input-container class="example-full-width">
+  <input mdInput placeholder="Server Name" [(ngModel)]="serverName" >  
+</md-input-container>
+</div>
+
+<div class="example-container">
   <div class="button-row">
     <button md-raised-button
       [disabled]="!allowNewServer"

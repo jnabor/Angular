@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
@@ -27,6 +28,7 @@ import { ImageComponent } from './image/image.component';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     BrowserAnimationsModule,
     MdButtonModule,
     MdCardModule,
