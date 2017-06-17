@@ -16,6 +16,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ImageComponent } from './image/image.component';
 import { UsernameComponent } from './username/username.component';
 
+import 'hammerjs';
 
 @NgModule({
   declarations: [

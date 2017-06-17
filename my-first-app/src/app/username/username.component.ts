@@ -17,4 +17,8 @@ export class UsernameComponent implements OnInit {
   onUpdateUserName(event: Event){
     this.userName = (<HTMLInputElement>event.target).value;
   }
+
+  getUserName(){
+    return this.userName;
+  }
 }

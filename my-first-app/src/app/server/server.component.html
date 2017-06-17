@@ -1,16 +1,7 @@
 
 
-<!-- <md-card [ngClass]="{online: serverStatus === 'online'}"> -->
-<md-card>
-
-<!--
-<div class="server-status">
-Test Status
-</div>
-<div class="server-toggle">
-Test Toggle
-</div>
--->
+<md-card
+[ngClass]="{ 'server-online': classOnline, 'server-offline': classOffline }">
 
 <div class="server-status">
 <p [ngStyle]="{ color: getColor() }">
@@ -20,7 +11,6 @@ Test Toggle
 
 <div class="server-toggle">
 <md-slide-toggle
-    color=primary
     [checked]="getServerStatus() === 'online'"
     (change)="onUpdateServerStatus()">
 </md-slide-toggle>

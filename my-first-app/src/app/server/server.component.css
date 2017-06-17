@@ -14,3 +14,11 @@
 .server-toggle{ 
     text-align:right; 
 }
+
+.server-online{
+    background-color: #dbb7ff;
+}
+
+.server-offline{
+    background-color: white;
+}
