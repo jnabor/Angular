@@ -1,14 +1,20 @@
 <div class="example-container">
-
 <md-card>
+
 <md-input-container class="example-full-width">
   <input mdInput placeholder="User Name" 
-        [(ngModel)]="userName" >  
+        [(ngModel)]="userName" mdTooltip="2-way binding" mdTooltipPosition="right">  
 </md-input-container>
+
+<md-input-container class="example-full-width">
+  <input mdInput placeholder="User Name" 
+        (input)="onUpdateUserName($event)" mdTooltip="event binding" mdTooltipPosition="right">  
+</md-input-container>
+
 <p>{{ userName }}</p>  
 <button md-raised-button
       [disabled]="userName === ''"
       (click)="userName = ''">Reset</button>
-</md-card>
 
+</md-card>
 </div>
