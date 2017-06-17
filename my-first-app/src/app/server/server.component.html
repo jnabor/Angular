@@ -1,2 +1,30 @@
 
-<span [ngStyle]="{ color: getColor() }" >{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</span>
+
+<!-- <md-card [ngClass]="{online: serverStatus === 'online'}"> -->
+<md-card>
+
+<!--
+<div class="server-status">
+Test Status
+</div>
+<div class="server-toggle">
+Test Toggle
+</div>
+-->
+
+<div class="server-status">
+<p [ngStyle]="{ color: getColor() }">
+    {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} 
+</p>
+</div>
+
+<div class="server-toggle">
+<md-slide-toggle
+    color=primary
+    [checked]="getServerStatus() === 'online'"
+    (change)="onUpdateServerStatus()">
+</md-slide-toggle>
+</div>
+
+</md-card>
+

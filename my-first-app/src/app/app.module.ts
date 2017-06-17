@@ -10,7 +10,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule, MdInputModule, MdGridListModule, MdTooltipModule, MdSnackBarModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { MdInputModule, MdGridListModule, MdTooltipModule, MdSnackBarModule, MdSlideToggleModule } from '@angular/material';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ImageComponent } from './image/image.component';
 import { UsernameComponent } from './username/username.component';
@@ -40,7 +41,8 @@ import { UsernameComponent } from './username/username.component';
     MdInputModule,
     MdGridListModule,
     MdTooltipModule,
-    MdSnackBarModule
+    MdSnackBarModule,
+    MdSlideToggleModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

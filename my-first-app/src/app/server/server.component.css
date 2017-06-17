@@ -1,0 +1,16 @@
+.online {
+    background-color: #ecf5ff;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.server-status{
+    text-align:left; 
+    float:left;
+}
+
+.server-toggle{ 
+    text-align:right; 
+}
