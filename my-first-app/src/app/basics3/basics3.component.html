@@ -1,17 +1,16 @@
 <div class="example-container">
 
 <md-card>
+
   <button md-raised-button
-      (click)="displayDetails()">Display Details</button>
+      (click)="toggleDisplay()">Display Details</button>
 
-  <p [ngClass]="{'p-hide': isShown }">
-    Hello World!
-  </p>
+  <p *ngIf="isShown">Hello World!</p>
 
-  <div *ngFor="let time of timestamps; let i = index"
-     [ngStyle]="{ 'background-color': getColor(i) }" 
-     [ngClass]="{ 'p-5-above' : isEnabled(i) }">
-    {{ time }}
+  <div *ngFor="let timeItem of timestamps; let i = index"
+     [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }" 
+     [ngClass]="{ 'white-text' : i >= 4 ? true : false }">
+    {{ timeItem }}
   </div>
 
 </md-card>

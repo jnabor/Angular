@@ -15,30 +15,9 @@ export class Basics3Component implements OnInit {
   ngOnInit() {
   }
 
-  displayDetails(){
+  toggleDisplay(){
+    this.isShown = !this.isShown;
     this.x = Date.now();
     this.timestamps.push(this.x);
-    if(this.isShown == true){
-      this.isShown = false;
-    } else {
-      this.isShown = true;
-    }
   }
-
-  getColor(i){
-    if(i >= 4){
-      return 'blue';
-    } else {
-      return 'white';
-    }
-  }
-
-  isEnabled(i){
-    if(i >= 4){
-      return true;
-    } else {
-      return false;
-    }
-  }
-
 }
