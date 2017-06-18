@@ -6,11 +6,13 @@ import {MdSnackBar} from '@angular/material';
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
+
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No server was created!";
   serverName = '';
   serverCreated = false;
+  servers = ['Test Server 1', 'Test Server 2', 'est Server 3'];
 
   tiles = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
@@ -26,8 +28,10 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer(){
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'A new server was created! Name is ' + this.serverName;
     this.serverName = '';
+    
     /*
     this.serverCreated = true;
     setTimeout(() => {

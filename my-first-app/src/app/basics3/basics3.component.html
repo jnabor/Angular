@@ -1,0 +1,18 @@
+<div class="example-container">
+
+<md-card>
+  <button md-raised-button
+      (click)="displayDetails()">Display Details</button>
+
+  <p [ngClass]="{'p-hide': isShown }">
+    Hello World!
+  </p>
+
+  <div *ngFor="let time of timestamps; let i = index"
+     [ngStyle]="{ 'background-color': getColor(i) }" 
+     [ngClass]="{ 'p-5-above' : isEnabled(i) }">
+    {{ time }}
+  </div>
+
+</md-card>
+</div>

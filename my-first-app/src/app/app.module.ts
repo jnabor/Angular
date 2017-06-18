@@ -17,6 +17,7 @@ import { ImageComponent } from './image/image.component';
 import { UsernameComponent } from './username/username.component';
 
 import 'hammerjs';
+import { Basics3Component } from './basics3/basics3.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import 'hammerjs';
     ServersComponent,
     ToolbarComponent,
     ImageComponent,
-    UsernameComponent
+    UsernameComponent,
+    Basics3Component
   ],
   imports: [
     BrowserModule,
