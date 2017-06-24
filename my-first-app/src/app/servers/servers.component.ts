@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MdSnackBar} from '@angular/material';
+import { Server } from '../shared/server.model';
 
 @Component({
   selector: 'app-servers',
@@ -12,7 +13,13 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = "No server was created!";
   serverName = '';
   serverCreated = false;
-  servers = ['Test Server 1', 'Test Server 2', 'est Server 3'];
+  random: number;
+
+  servers: Server[] = [
+    new Server('Test Server AAA', 11),
+    new Server('Test Server HEX', 22),
+    new Server('Test Server TDD', 34)
+  ];
 
   tiles = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
@@ -27,8 +34,17 @@ export class ServersComponent implements OnInit {
       }, 2000);
   }
 
+  onChangedEvent(){
+
+
+      this.snackBar.open("sdsdsdsdsdsdsdsasdasd", null, {
+      duration: 3000
+      });
+  }
+
   onCreateServer(){
-    this.servers.push(this.serverName);
+    var rand = Math.floor(Math.random() * 10);
+    this.servers.push(new Server(this.serverName, rand));
     this.serverCreationStatus = 'A new server was created! Name is ' + this.serverName;
     this.serverName = '';
     
@@ -37,11 +53,7 @@ export class ServersComponent implements OnInit {
     setTimeout(() => {
         this.serverCreated = false;
       }, 4000);
-    */
-
-    this.snackBar.open(this.serverCreationStatus, null, {
-      duration: 3000
-      });
+    */    
   }
 
   ngOnInit() {

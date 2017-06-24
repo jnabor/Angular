@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
+import { Server } from '../shared/server.model';
 
 @Component({
   selector: 'app-server',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ServerComponent implements OnInit {
+  //@Ouput() serverCreated = new EventEmitter<{sName: string, sStatus: string}>();
+  @Input() server: Server; 
+  
   serverId: number = 10;
   serverStatus: string = 'offline';
   classOnline = true;
@@ -27,6 +32,7 @@ export class ServerComponent implements OnInit {
   }
  
   toggleClass() {
+
     if(this.serverStatus == 'online') {
       this.serverStatus = 'offline';
       this.classOnline = false;
@@ -36,6 +42,11 @@ export class ServerComponent implements OnInit {
       this.classOnline = true;
       this.classOffline = false;
     }
+
+    //this.serverCreated.emit({
+    //  sName: this.server.name,
+    //  sStatus: this.serverStatus
+    //})
   }
 
   onUpdateServerStatus(){
