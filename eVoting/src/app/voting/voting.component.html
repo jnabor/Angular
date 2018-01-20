@@ -1,0 +1,46 @@
+<mat-horizontal-stepper>
+
+    <mat-step>
+        <ng-template matStepLabel>Selection</ng-template>
+        <br/>
+        President<br/>
+        VP Internal<br/>
+        VP External<br/>
+        Secretary<br/>
+        Treasurer<br/><br/><br/>
+
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+      </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Review your votes</ng-template>
+    <br/>
+    President<br/>
+    VP Internal<br/>
+    VP External<br/>
+    Secretary<br/>
+    Treasurer<br/><br/><br/>
+
+        <div>
+            <span class="example-spacer">
+          <button mat-button matStepperPrevious>Back</button>
+        </span>
+          <span class="example-spacer">
+          <button mat-raised-button color="primary" matStepperNext>Submit</button>
+        </span>
+        </div>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    Thank you for voting! You are now done.
+    <br/><br/>
+    <span class="example-spacer">
+    <div>
+        <button mat-raised-button>See Results</button>
+    </div>
+  </span>
+  </mat-step>
+</mat-horizontal-stepper>

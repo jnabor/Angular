@@ -1,0 +1,11 @@
+.main_window{
+  padding: 10px;
+}
+
+.demo-tab-group {
+ border: none;
+}
+
+.demo-tab-content {
+  padding: 16px;
+}
